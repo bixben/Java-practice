@@ -1,29 +1,20 @@
 class Hello
 {
 
-    public static void main(String a[])
+    public static void main(String args[])
     {
-        int num1=9;
-        byte by=127;
-        short sh=558;
-        long l=6745l;//always use l with long variables
+        //byte b= 127;
+        int a=257;
+        byte k=(byte)a;
 
-        float f=5.8f;//by default java only knows double ,so explicitly mention f
-        double d=5.8;
+        float f=5.6f;
+        int t=(int)f;
+        System.out.println(t);
 
-        char c='b';
-
-        boolean b=true;
-
-        //printing everything
-        System.out.println(num1);
-        System.out.println(by);
-        System.out.println(sh);
-        System.out.println(l);
-        System.out.println(f);
-        System.out.println(d);
-        System.out.println(b);
-
+        byte b=10;
+        byte c=25;
+        int result = b*c;//the type is changed to int because the result value goes out of the byte rage
+        System.out.println(result);
 
 
     }
